@@ -127,7 +127,7 @@ namespace Nebulous
         {
             GraphicsDevice.Clear(Color.Black);
 			
-			spriteBatch.Begin(SpriteSortMode.FrontToBack, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.Default, RasterizerState.CullCounterClockwise);
+			spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend, SamplerState.PointClamp, DepthStencilState.Default, RasterizerState.CullCounterClockwise);
             foreach (WidgetWindow window in windowList) window.Draw(spriteBatch);
 			spriteBatch.End();
 			

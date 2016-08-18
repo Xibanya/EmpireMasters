@@ -98,7 +98,7 @@ namespace Nebulous
 			{
 				for (int x = 0; x < mapdata.mapWidth; x++)
 				{
-					spriteBatch.Draw(tilesets[0], mapSurface[x, y, 0], sourceRect, Color.White);
+					spriteBatch.Draw(tilesets[0], mapSurface[x, y, 0], sourceRect, Color.White, 0.0f, Vector2.Zero, SpriteEffects.None, 0.3f);
 				}
 			}
 		}
